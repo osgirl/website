@@ -1,0 +1,307 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: 'BGFlame', 'Montserrat', sans-serif;
+	/*padding: 32px;*/
+	/*font-size:62.5%;*/
+	color: #4A4A4A;
+	font-szie: 100%;
+	/*word-wrap: normal;*/
+	word-wrap: break-word; 
+}
+
+.justify-center{float: none; margin: 0 auto;}
+
+.spacer{clear: both; display: block; width: 100%; height: 1px;}
+
+.spacer-medium {clear: both; display: block; width: 100%; height: 64px;}
+.spacer-large {clear: both; display: block; width: 100%; height: 128px;}
+
+/***Typography***/
+h1, h2, h3, h4, h5, h6, strong {color: #005EB8;}
+
+h1{
+	/*font-size: 5.3533334em;*/
+	font-size: 64px;
+	font-weight: 500;
+	margin-bottom: 32px;
+}
+
+
+h3{
+	/*font-size: 5.3533334em;*/
+	font-size: 24px;
+	font-weight: 200;
+	margin-bottom: 16px;
+}
+
+.display-extra-big{
+	font-weight: 100;
+	font-size: 144px;
+}
+
+h1.display{
+	font-weight: 200;
+}
+
+
+/*h3{
+	font-size: 2.007500020075008em;
+	margin-bottom: 32px;	
+}*/
+
+
+
+
+p{
+	line-height: 2em;
+	margin-bottom: 32px;
+	font-weight: 300;
+}
+
+
+p.lead{
+	font-size: 24px;
+	line-height: 42px;
+	margin-bottom: 32px;
+	font-weight: 200;
+}
+
+
+.text-caption{color: #999999; font-size: 14px; }
+
+strong{font-weight: 300}
+
+
+address{font-weight: 200}
+
+
+.browser-warning{
+	
+	background: #F31B3C;
+	color: #fff;
+	width: 100%;
+	z-index: 2000;
+	position: fixed;
+	bottom: 0;
+	padding: 24px;
+	text-align: center;
+	font-weight: 300;
+	display: none;
+}
+
+.browser-warning strong{color: #fff; font-weight: 500;}
+
+
+.feature-image{margin-bottom: 32px;}
+
+@media (max-width: 767.98px) {
+	
+	p.lead{font-size: 20px; line-height: 30px;}
+	h3{font-size: 20px;}
+	.display-extra-big{font-size: 72px; word-break: normal;}
+	h1.display{font-size:48px;}
+	.branded-bg h1.display {margin-top: 64px;}
+	.contact-card{margin-bottom: 32px;}
+	.grow-image{padding-bottom: 32px;}
+}
+
+/*** Main Content ***/
+
+video {
+	width: 100%; 
+    min-height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	opacity: 0.6;
+	object-fit:fill;
+	object-fit: cover;
+	-webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+.intro-copy, .logo{	
+	position: absolute;
+	z-index: 2000;
+}
+
+.disc{
+	height: 272px;
+	width: 272px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 96px;
+	line-height: 272px;
+	color: #ffffff;
+	font-weight: 200;
+	background: rgba(0,94,184,0.25);
+	margin-bottom: 32px;
+}
+
+.btn{font-weight: 300; line-height: 56px; padding-top: 0px; border: 0px;}
+.btn-primary, .btn-light {height: 56px; width: 256px;}
+.btn-primary {background: #005EB8;}
+.btn-light {background: #ffffff; color: #005EB8;}
+
+.st1{background: rgba(0,94,184,0.25);}
+.st2{background: rgba(0,153,255,0.50);}
+.st3{background: rgba(0,153,255,1);}
+.st4{background: rgba(0,94,184,1);}
+
+.branded-bg{background: #005EB8; color: #fff;}
+.white-bg{background: #000;}
+
+.section-title{padding-top: 64px;}
+
+.block-fullpage{min-height: 100vh; padding-left: 0px; padding-right: 0px; padding-top: 0px; border-bottom:1px dashed #dddddd;}
+
+.block-fullpage .row{min-height: 100vh; /**border-top: 64px transparent solid; box-sizing: border-box;**/}
+
+.block-featured-casestudy {min-height: 100vh; background: #005EB8; color:#ffffff;}
+
+.casestudy-item .display{padding-top: 32px;}
+
+.feature{padding-bottom: 64px;}
+
+.feedback .row, .ourteam .row{display: block; padding-bottom: 64px;}
+
+.slider-feedback{padding-top: 128px; padding-bottom: 32px;}
+
+.team-images{margin-bottom: 40px;}
+
+.block-team-profile{padding-left: 64px; padding-right: 64px;}
+
+.contact-card{width: 60%; padding: 32px; color: #ffffff; background: #005EB8;}
+.contact-card a, .contact-card h3{color: #ffffff; }
+
+
+img.team-images{width: 100%;}
+
+@media (max-width: 767.98px) {
+	.block-fullpage {padding-left: 16px;padding-right: 16px;}
+	.disc{ height: 200px; width: 200px; line-height: 200px;}
+	.block-team-profile{padding-left: 24px; padding-right: 24px;}
+	.row.row-style-simple{display: block;}
+	.slider-ourteam, .slider-feedback{padding-top: 64px;}
+	.contact-card{width: 85%;}
+	.grow-image{max-width: 200px; margin: 0 auto; float: none;} 
+	
+	.casestudy-item .display{padding-top: 64px;}
+}
+
+@media (max-height: 600px) {
+	.intro-copy {position: relative; margin-top: 160px; padding-bottom: 64px;}
+}
+
+/**pagination**/
+
+.pagination {
+	position:fixed;
+	top:0;
+	bottom:0;
+	right:20px;
+	height:90px;
+	margin:auto;
+	font-size:1.2em;
+	z-index: 10;
+	display: inline;
+
+	/*background: #ffffff;*/
+}
+.pagination a {
+	display:block;
+	width:100px;
+	height:13px;
+	border-radius:50%;
+   
+	color:#005EB8;
+	position:relative;
+	padding:4px;
+	font-weight: 200;
+	font-size: 12px;
+}
+
+body.statemment .pagination a, body.my-day .pagination a, body.localz .pagination a, body.intro .pagination a{color:#ffffff;}
+
+.pagination a.active:after {
+	background:transparent;
+	border:1px solid #005EB8;
+	width:8px;
+	height:8px;
+	right:0;
+}
+
+body.statemment .pagination a.active:after, body.my-day .pagination a.active:after, body.sonar .pagination a.active:after, body.localz .pagination a.active:after, body.intro .pagination a.active:after{background:transparent; border:1px solid #ffffff;}
+
+.pagination a .hover-text {
+	position:absolute;
+	right:20px;
+	top:5px;
+	opacity:0;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+}
+.pagination a:hover .hover-text {
+	opacity: 1;
+}
+.pagination a:after {
+	width:4px;
+	height:4px;
+	display: block;
+	background:#005EB8;
+	border-radius:50%;
+	content:'';
+	position: absolute;
+	margin:auto;
+	top:0;
+	right:2px;
+	bottom:0;
+
+}
+
+body.statemment .pagination a:after, body.my-day .pagination a:after, body.sonar .pagination a:after, body.localz .pagination a:after, body.intro .pagination a:after{background:#ffffff;}
+
+
+
+.feedback-item:hover, .block-team-profile:hover, .slick-track{cursor: grab;}
+
+
+/*.slick-next.slick-arrow{background: red;}
+
+.slick-back.slick-arrow{background: red;}*/
+
+
+
+
+/*needs investigating,  but could qork for vertical elements
+
+.vertical-center {
+	text-align:center;
+	width:100%;
+	position: absolute;
+	top: 47%;
+	transform: translateY(-47%);
+}
+.vertical-center p {
+	margin-top:23px;
+}
+
+.inner {
+	position: relative;
+	height:100%;
+
+	width:80%;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+*/
